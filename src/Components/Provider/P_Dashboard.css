@@ -1,0 +1,77 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .tiles_container{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right:auto;
+    width: 74%;
+    height: fit-content;
+    color: black;
+  }
+  .p_tile:nth-child(even){
+    background-color: #E1C9F8;
+  }
+  .p_tile:nth-child(odd){
+    background-color: #48D7FE;
+  }
+  .intro_text{
+    display: flex;
+    margin-top: 1rem;
+  }
+  .p_tile{
+    padding: 10px;
+    width:100%;
+    height:16rem;
+    border-radius: 10px 10px;
+    border:1px solid white;
+  }
+  .p_calendar{
+    height: fit-content;
+  }
+  .ps_calendar_nav{
+    display: flex;
+    justify-content: center;
+  }
+  .greeting{
+    margin-top: 5rem;
+    width: fit-content;
+  }
+  .header_mobile{
+    visibility:hidden;
+  }
+  .p_appointment_text{
+    height: 60%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 3rem;
+    margin-left: -16rem;
+    line-height: 1.5pc;
+    overflow-y: auto;
+    font-weight: 700;
+  }
+  .p_tblDate{
+    width: 100px;
+  }
+  .p_tblWord{
+    width: 40px
+  }
+  .p_tblWord.sm{
+    width: 25px
+  }
+  .p_tblTime{
+    width: 165px;
+  }
+  @media(max-width: 600px){
+    .header_main{
+      visibility: hidden;
+    }
+    .header_mobile{
+      visibility:visible;
+    }
+  }
